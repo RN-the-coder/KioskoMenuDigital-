@@ -1,0 +1,2 @@
+import { Minus, Plus } from 'lucide-react';
+export function QuantitySelector({value,onChange}:{value:number;onChange:(n:number)=>void}) { return <div className="quantity"><button aria-label="Disminuir cantidad" disabled={value<=1} onClick={()=>onChange(value-1)}><Minus size={17}/></button><span>{value}</span><button aria-label="Aumentar cantidad" disabled={value>=99} onClick={()=>onChange(value+1)}><Plus size={17}/></button></div> }

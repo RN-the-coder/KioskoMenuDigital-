@@ -1,0 +1,1 @@
+export function FoodImage({src,alt,className=''}:{src:string;alt:string;className?:string}) { return <img className={className} src={src} alt={alt} onError={e=>{e.currentTarget.onerror=null;e.currentTarget.src='/sandwich.svg'}}/> }
